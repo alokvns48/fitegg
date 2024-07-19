@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  perspective: 1000px;
+}
+.card {
+  transform-style: preserve-3d;
+}
+.sneaker {
+  transform: translateZ(0px);
+  transition: transform 0.3s ease;
+}
