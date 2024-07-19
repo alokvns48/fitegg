@@ -2,51 +2,46 @@ import { useEffect, useRef } from "react";
 import authentic from "../assets/authentic.svg";
 
 function Nutrients() {
-  const containerRefs = useRef([]);
+  const containerRef = useRef();
 
   useEffect(() => {
-    const containers = containerRefs.current;
+    const container = containerRef.current;
 
-    containers.forEach((container) => {
-      const card = container.querySelector(".card");
-      const sneaker = container.querySelector(".sneaker");
+    const card = container.querySelector(".card");
+    const sneaker = container.querySelector(".sneaker");
 
-      const handleMouseMove = (e) => {
-        const rect = container.getBoundingClientRect();
-        const centerX = rect.left + window.scrollX + rect.width / 2;
-        const centerY = rect.top + window.scrollY + rect.height / 2;
-        let xAxis = (centerX - e.pageX) / 25;
-        let yAxis = (centerY - e.pageY) / 25;
-        card.style.transform = `rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`;
-      };
+    const handleMouseMove = (e) => {
+      const rect = container.getBoundingClientRect();
+      const centerX = rect.left + window.scrollX + rect.width / 2;
+      const centerY = rect.top + window.scrollY + rect.height / 2;
+      let xAxis = (centerX - e.pageX) / 25;
+      let yAxis = (centerY - e.pageY) / 25;
+      card.style.transform = `rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`;
+    };
 
-      const handleMouseEnter = () => {
-        card.style.transition = `none`;
-        sneaker.style.transform = "translateZ(50px)";
-      };
+    const handleMouseEnter = () => {
+      card.style.transition = `none`;
+      sneaker.style.transform = "translateZ(50px)";
+    };
 
-      const handleMouseLeave = () => {
-        card.style.transition = `all 0.5s ease`;
-        card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-        sneaker.style.transform = "translateZ(0px)";
-      };
+    const handleMouseLeave = () => {
+      card.style.transition = `all 0.5s ease`;
+      card.style.transform = `rotateY(0deg) rotateX(0deg)`;
+      sneaker.style.transform = "translateZ(0px)";
+    };
 
-      container.addEventListener("mousemove", handleMouseMove);
-      container.addEventListener("mouseenter", handleMouseEnter);
-      container.addEventListener("mouseleave", handleMouseLeave);
+    container.addEventListener("mousemove", handleMouseMove);
+    container.addEventListener("mouseenter", handleMouseEnter);
+    container.addEventListener("mouseleave", handleMouseLeave);
 
-      return () => {
-        container.removeEventListener("mousemove", handleMouseMove);
-        container.removeEventListener("mouseenter", handleMouseEnter);
-        container.removeEventListener("mouseleave", handleMouseLeave);
-      };
-    });
+    return () => {
+      container.removeEventListener("mousemove", handleMouseMove);
+      container.removeEventListener("mouseenter", handleMouseEnter);
+      container.removeEventListener("mouseleave", handleMouseLeave);
+    };
   }, []);
   return (
-    <div
-      className="container p-[2rem]"
-      ref={(el) => (containerRefs.current[0] = el)}
-    >
+    <div className="container p-[2rem]" ref={containerRef}>
       <div className="card relative w-[350px]  p-5  border border-yellow-900 ">
         <img
           src={authentic}
