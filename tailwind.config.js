@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         bigshoulders: ["Big Shoulders Display", "sans-serif"],
         inconsolata: ["Inconsolata", "monospace"],
+        ultra: ["Ultra", "serif"],
       },
     },
   },
