@@ -4,26 +4,23 @@ import Nutrients from "./Nutrients";
 import EggWithHeading from "./EggWithHeading";
 import LearnMore from "./LearnMore";
 
-
 function HomePage() {
   return (
     <section className="w-full min-h-[100vh] bg-[#fff8e3] px-24">
       <Navbar />
       <div className="flex justify-center gap-[80px]">
-        <div className="">
+        <div className="flex flex-col content-center">
           {/* left section */}
           <EggWithHeading />
         </div>
         <div className="">
           {/* Right section */}
-          <div className="mt-24 flex">
+          <HealthyEating/>
+          <div className="flex">
             {/* top */}
-            <div>
-            <HealthyEating/>
-            <LearnMore/>
-            </div>
-            
-            <Nutrients/>            
+            <LearnMore />
+
+            <Nutrients />
           </div>
         </div>
       </div>
