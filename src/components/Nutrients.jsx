@@ -42,11 +42,11 @@ function Nutrients() {
   }, []);
   return (
     <div className="container p-[2rem]" ref={containerRef}>
-      <div className="card relative w-[350px]  p-5  border border-yellow-900 ">
+      <div className="card relative min-w-[20vw]  p-5  border border-yellow-900 ">
         <img
           src={authentic}
           alt="authentic"
-          className="w-40 absolute -top-[20%] right-[8%]"
+          className="w-[10vw] absolute -top-[20%] right-[8%]"
         />
         <div className="sneaker flex flex-col justify-center whitespace-nowrap border-solid overflow-hidden">
           <h2 className="text-lg font-medium leading-8 text-[#B48C81]">

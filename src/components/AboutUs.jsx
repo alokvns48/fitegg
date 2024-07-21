@@ -6,7 +6,7 @@ function AboutUs() {
     <div className="flex">
       <div className="w-1/2 mr-10">
         {/* left */}
-        <h2 className="font-ultra text-3xl tracking-wide text-[#DA3A3B] mb-12">
+        <h2 className="font-ultra text-[2.5vw] tracking-wide text-[#DA3A3B] mb-12">
           ABOUT US
         </h2>
         <p>
