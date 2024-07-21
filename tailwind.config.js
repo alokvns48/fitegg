@@ -10,6 +10,10 @@ export default {
         slackey: ["Slackey", "sans-serif"],
         ubuntu: ["Ubuntu", "sans-serif"],
       },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(180.33deg, #FFFFFF -6.69%, #FBFF28 203.31%)",
+      },
     },
   },
   plugins: [],
