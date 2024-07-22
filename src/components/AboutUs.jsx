@@ -1,9 +1,9 @@
-import React from "react";
+
 import aboutUsImg from "../assets/aboutUsImg.png";
 
 function AboutUs() {
   return (
-    <div className="flex">
+    <div className="flex ">
       <div className="w-1/2 mr-10">
         {/* left */}
         <h2 className="font-ultra text-[2.5vw] tracking-wide text-[#DA3A3B] mb-12">
@@ -26,12 +26,12 @@ function AboutUs() {
           voluptates ducimus, iure commodi quam animi deserunt sequi voluptatem.
         </p>
       </div>
-      <div>
+      <div className="flex justify-center ">
         {/* right */}
         <img
           src={aboutUsImg}
           alt=""
-          className="w-[650px] h-[350px] mt-20 border-4 border-[#9A7C6D]"
+          className="w-[500px] lg:w-[550px] xl:w-[650px] xl:h-[350px] mt-20 border-4 border-[#9A7C6D] rounded-2xl"
         />
       </div>
     </div>

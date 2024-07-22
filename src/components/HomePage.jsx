@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <section className="w-full bg-[#fff8e3] px-24 min-h-[100vh]">
       <Navbar />
-      <div className="HomePageContainerDiv flex justify-center gap-[80px]">
+      <div className="HomePageContainerDiv flex justify-center xl:gap-[80px]">
         <div className="flex flex-col content-center overflow-hidden">
           {/* left section */}
           <EggWithHeading />
