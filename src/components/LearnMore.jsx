@@ -4,7 +4,7 @@ import bookicon from "../assets/book-icon.svg";
 function LearnMore() {
   return (
     <div>
-      <div className="mr-5 w-[200px] pt-[2rem]">
+      <div className="mr-5 w-[200px] pt-[2.5rem]">
         <p className="font-ubuntu">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, at?
           Obcaecati ullam amet aut quam, cum iste! Obcaecati maiores iste

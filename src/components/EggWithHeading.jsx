@@ -21,7 +21,7 @@ function EggWithHeading() {
   return (
     <>
       {/* left section */}
-      <h1 className="font-bigshoulders text-[10vw] leading-[10vw] font-[700] text-[#e50101] text-center fitEggText self-start mx-auto mt-[4rem]">
+      <h1 className="font-bigshoulders text-[10vw] leading-[10vw] font-[700] text-[#e50101] text-center fitEggText self-start mx-auto mt-[3rem]">
         FITEGG
       </h1>
 
