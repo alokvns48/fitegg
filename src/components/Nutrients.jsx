@@ -42,7 +42,7 @@ function Nutrients() {
   }, []);
   return (
     <div className="container p-[2rem]" ref={containerRef}>
-      <div className="card relative min-w-[20vw]  p-5  border border-yellow-900 ">
+      <div className="card relative min-w-[20vw] w-[18rem]  p-5  border border-yellow-900 cursor-pointer">
         <img
           src={authentic}
           alt="authentic"

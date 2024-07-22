@@ -1,12 +1,12 @@
 
 function HealthyEating() {
   return (
-    <div className="">
-      <p className="font-inconsolata text-2xl leading-6 -tracking-wide text-[#482006]">
+    <div className="mx-auto mt-[4rem] healthyEatingContainer">
+      <p className="text-2xl leading-6 -tracking-wide text-[#482006] font-lora">
         One FITEGG containing every promise of
       </p>
-      <div className="font-bigshoulders mr-12">
-        <p className="text-8xl font-bold text-[#FAB303]">HEALTHY EATING</p>
+      <div className="font-bigshoulders mr-12 healthyEatingText">
+        <h2 className="md:text-[5vw] lg:text-[4vw] font-bold text-[#FAB303] font-lora">HEALTHY EATING</h2>
       </div>
     </div>
   );

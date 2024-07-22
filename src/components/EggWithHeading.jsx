@@ -6,7 +6,7 @@ function EggWithHeading() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const translateAmount = Math.log(window.scrollY + 1) * 9;
+      const translateAmount = window.scrollY / 4;
       setTranslateEggImg(translateAmount);
     };
 
@@ -21,7 +21,7 @@ function EggWithHeading() {
   return (
     <>
       {/* left section */}
-      <h1 className="font-bigshoulders text-[10vw] font-[700] text-[#e50101] text-center fitEggText self-start mx-auto">
+      <h1 className="font-bigshoulders text-[10vw] leading-[10vw] font-[700] text-[#e50101] text-center fitEggText self-start mx-auto mt-[4rem]">
         FITEGG
       </h1>
 
@@ -30,7 +30,7 @@ function EggWithHeading() {
         alt="Egg With Qr Img"
         className="eggImg mx-auto w-[30vw]"
         style={{
-          transform: `translateY(${translateEggImg}px) translateX(-1.3rem) translateY(-21.5%)`,
+          transform: `translateY(${translateEggImg}px) translateX(-1.3rem) translateY(-16.5%)`,
         }}
       />
     </>
