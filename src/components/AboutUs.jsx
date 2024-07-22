@@ -9,7 +9,7 @@ function AboutUs() {
         <h2 className="font-ultra text-[2.5vw] tracking-wide text-[#DA3A3B] mb-12">
           ABOUT US
         </h2>
-        <p>
+        <p className="font-ubuntu">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
           ducimus minima, quasi natus facere explicabo repellat mollitia officia
           voluptas, vitae praesentium maxime at unde excepturi harum dolore.

@@ -5,7 +5,7 @@ function LearnMore() {
   return (
     <div>
       <div className="mr-5 w-[200px] pt-[2rem]">
-        <p>
+        <p className="font-ubuntu">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, at?
           Obcaecati ullam amet aut quam, cum iste! Obcaecati maiores iste
           tenetur culpa cupiditate similique impedit corrupti exercitationem

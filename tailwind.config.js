@@ -11,6 +11,10 @@ export default {
         ubuntu: ["Ubuntu", "sans-serif"],
         lora: ["Lora", "serif"],
       },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(180.33deg, #FFFFFF -6.69%, #FBFF28 203.31%)",
+      },
     },
   },
   plugins: [],
