@@ -9,6 +9,7 @@ export default {
         ultra: ["Ultra", "serif"],
         slackey: ["Slackey", "sans-serif"],
         ubuntu: ["Ubuntu", "sans-serif"],
+        lora: ["Lora", "serif"],
       },
     },
   },
