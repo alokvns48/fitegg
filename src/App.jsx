@@ -1,6 +1,7 @@
 import AboutUsSection from "./components/AboutUsSection";
 import BenefitsSection from "./components/BenefitsSection";
 import BetterSection from "./components/BetterSection";
+import ContactUsSection from "./components/ContactUsSection";
 import HomePage from "./components/HomePage";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <AboutUsSection/>
       <BenefitsSection/>
       <BetterSection/>
+      <ContactUsSection/>
     </>
   );
 }
