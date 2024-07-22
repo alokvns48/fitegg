@@ -16,7 +16,7 @@ function HomePage() {
         <div className="">
           {/* Right section */}
           <HealthyEating/>
-          <div className="flex justify-between">
+          <div className="flex justify-between 2xl:justify-normal">
             {/* top */}
             <LearnMore />
 
