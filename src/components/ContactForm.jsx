@@ -1,3 +1,5 @@
+import AnimatedInput from "./AnimatedInput";
+import AnimatedTextArea from "./AnimatedTextArea";
 
 const ContactForm = () => {
   return (
@@ -6,35 +8,35 @@ const ContactForm = () => {
         <h2 className="text-2xl font-semibold text-center mb-6">Fill the form for any Queries</h2>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <input
+            <AnimatedInput
               className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               type="text"
-              placeholder="Name"
+              label="Name"
             />
           </div>
           <div className="w-full md:w-1/2 px-3">
-            <input
+            <AnimatedInput
               className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 leading-tight focus:outline-none focus:bg-white"
               type="text"
-              placeholder="Mobile"
+              label="Mobile"
             />
           </div>
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">
-            <input
+            <AnimatedInput
               className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               type="email"
-              placeholder="Email"
+              label="Email"
             />
           </div>
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full px-3">
-            <textarea
+            <AnimatedTextArea
               className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-48 resize-none"
-              placeholder="Message"
-            ></textarea>
+              label="Message"
+            ></AnimatedTextArea>
           </div>
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">

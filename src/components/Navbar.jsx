@@ -8,9 +8,9 @@ function Navbar() {
       </div>
       <div className="w-full h-20 flex items-center">
         <ul className='flex gap-32 mx-auto text-[#5d3327]'>
-            <li className='text-lg '>/Home /</li>
-            <li className='text-lg '>/About /</li>
-            <li className='text-lg '>/Contact /</li>
+            <li className='text-lg '>Home </li>
+            <li className='text-lg '>About</li>
+            <li className='text-lg '>Contact</li>
         </ul>
       </div>
     </div>

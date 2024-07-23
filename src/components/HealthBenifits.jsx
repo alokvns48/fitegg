@@ -5,19 +5,17 @@ function HealthBenifits() {
     <div className="flex w-full  min-h-[50rem]  items-center justify-between px-[6vw]   ">
       <div className="w-1/2">
         {/* left */}
-        <h2 className="font-ultra text-[2.5vw] tracking-wide text-[#FFD729] mb-12">
+        <h2 className="font-sans font-extrabold text-[3vw] tracking-wide text-[#FFD729] mb-12">
           HEALTH BENEFITS
         </h2>
-        <ol className="text-[1.4vw] font-ubuntu font-bold list-decimal list-inside flex flex-col gap-y-[1.5vw] ">
-          <li className="">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          <li>Lorem psum dolor sit amet, consectetur adipiscing elit</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <ol className="text-[1.4vw] font-ubuntu font-semibold list-decimal list-inside flex flex-col gap-y-[1.5vw] ">
+          <li>High-quality protein source for muscle growth.</li>
+          <li>Rich in essential vitamins and minerals.</li>
+          <li>Contains antioxidants for eye health.</li>
+          <li>Promotes brain health with choline.</li>
+          <li>Supports heart health with omega-3s.</li>
+          <li>Aids weight management, keeps you full.</li>
+          <li>Boosts immune system with essential nutrients.</li>
         </ol>
       </div>
       <div className="flex justify-end items-center relative">
