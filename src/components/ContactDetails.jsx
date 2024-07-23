@@ -47,7 +47,7 @@ function ContactDetails() {
             icon={faLocationDot}
             style={{ color: "#713e11" }}
           />
-          <p>Lucknow, Prayagraj, Buxar lore</p>
+          <p>Lucknow, Prayagraj, Buxar</p>
         </div>
       </div>
     </div>

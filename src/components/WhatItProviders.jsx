@@ -18,7 +18,7 @@ function WhatItProviders() {
       </p>
       <div className="flex justify-center">
         <div className="marque flex-shrink-0 flex  justify-between items-center h-[150px] border-2 font-slackey text-[1.5vw] text-[#755454]  py-8 w-[300%]">
-          <p className="h-full flex items-center ">HIGH PROTIEN</p>
+          <p className="border-l-2 h-full flex items-center pl-6 ">HIGH PROTIEN</p>
           <p className="border-l-2 h-full  flex items-center pl-6">
             SOURCE OF OMEGA -3S
           </p>
@@ -30,7 +30,7 @@ function WhatItProviders() {
             CONTRIBUTE TO BONE HEALTH
           </p>
 
-          <p className="h-full flex items-center ">HIGH PROTIEN</p>
+          <p className="border-l-2 h-full flex items-center pl-6">HIGH PROTIEN</p>
           <p className="border-l-2 h-full  flex items-center pl-6">
             SOURCE OF OMEGA -3S
           </p>
@@ -42,7 +42,7 @@ function WhatItProviders() {
             CONTRIBUTE TO BONE HEALTH
           </p>
 
-          <p className="h-full flex items-center ">HIGH PROTIEN</p>
+          <p className="border-l-2 h-full flex items-center pl-6">HIGH PROTIEN</p>
           <p className="border-l-2 h-full  flex items-center pl-6">
             SOURCE OF OMEGA -3S
           </p>
