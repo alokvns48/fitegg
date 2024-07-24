@@ -6,13 +6,13 @@ function WhatItProviders() {
   useEffect(() => {
     gsap.fromTo(".marque",{x:"0%"},{
       x: `${100/3}%`,
-      duration: 14,
+      duration: 20,
       repeat: -1,
       ease: "linear",
     });
   }, []);
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden marqueWrapperDiv">
       <p className="text-[4vw] font-bigshoulders font-bold tracking-wide my-[3vw] text-center text-[#3E2F08]">
         wHAT dOES FITEGG pROVIDES???
       </p>
