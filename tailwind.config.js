@@ -10,6 +10,7 @@ export default {
         slackey: ["Slackey", "sans-serif"],
         ubuntu: ["Ubuntu", "sans-serif"],
         lora: ["Lora", "serif"],
+        acme: ["Acme", "sans-serif"],
       },
       backgroundImage: {
         "custom-gradient":
