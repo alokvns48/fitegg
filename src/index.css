@@ -15,13 +15,97 @@
 
 /* HomePage MediaQueries */
 @media only screen and (max-width: 1105px) {
-  .HomePageContainerDiv{
+  .HomePageContainerDiv {
     gap: 0;
   }
   .fitEggText {
     margin-top: 3.5rem;
   }
-  .healthyEatingContainer{
+  .healthyEatingContainer {
     margin-top: 4rem;
+  }
+}
+
+/*-------------BenifitsSection animations starts------------ */
+/* BENEFITS_heading */
+.BENEFITS_heading {
+  animation: BENEFITS_heading_transform ease;
+  animation-timeline: view(
+    500px 0px
+  ); /* view(pageY offset(top se kitna neeche animation end hoga) , start point(bottom se kitne upar animation start hoga)) */
+}
+@keyframes BENEFITS_heading_transform {
+  from {
+    scale: 0.2;
+    opacity: 0.5;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+/* egg animation */
+.benifit_egg {
+  animation: translate-y ease-in;
+  animation-timeline: view(500px 0px);
+}
+
+@keyframes translate-y {
+  from {
+    transform: translateY(6rem);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* benefits_left_img */
+.benefits_left_img {
+  animation: translate-x ease-in;
+  animation-timeline: view(500px 0px);
+}
+@keyframes translate-x {
+  from {
+    transform: translateX(-100px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* benefits_right_img*/
+.benefits_right_img {
+  animation: translate-right-img ease-in-out;
+  animation-timeline: view(500px 0px);
+}
+@keyframes translate-right-img {
+  from {
+    transform: translateX(100px);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* ---------BenifitsSection animations ends--------- */
+
+/*--------HealthBenifits animation starts------------ */
+.yolk_img {
+  animation: translate-y-yolk-img ease-in;
+  animation-timeline: view(500px 0px);
+}
+
+@keyframes translate-y-yolk-img {
+  from {
+    transform: translateY(10rem);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

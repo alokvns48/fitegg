@@ -14,18 +14,18 @@ function BenefitsSection() {
         <div className="flex flex-col justify-center items-center w-full min-h-screen bg-[#F6F6F6] rounded-t-[150vh] pt-16 pb-24">
 
           <div className="relative flex items-center justify-center">
-            <h2 className="text-[9vw] font-sans font-[900] text-center text-[#F5CB1D]">
+            <h2 className="BENEFITS_heading text-[9vw] font-sans font-[900] text-center text-[#F5CB1D]">
               BENEFITS
             </h2>
             <h3 className="absolute text-[3vw] opacity-50">FIT EGG</h3>
           </div>
 
           <div className="flex justify-center">
-            <div className="pt-16">
+            <div className="pt-16 benefits_left_img">
               <img
                 src={benefits_left}
                 alt=""
-                className="w-[24vw] translate-y-6"
+                className=" w-[24vw] translate-y-6"
               />
             </div>
             <div className="relative mx-6 flex flex-col justify-center items-center">
@@ -33,10 +33,10 @@ function BenefitsSection() {
               <img
                 src={benefit_egg}
                 alt=""
-                className="absolute translate-y-24 w-[20vw] "
+                className="benifit_egg absolute  w-[20vw] "
               />
             </div>
-            <div className="pt-16">
+            <div className="pt-16 benefits_right_img">
               <img
                 src={benefits_right}
                 alt=""
