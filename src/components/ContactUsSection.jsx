@@ -9,8 +9,10 @@ function ContactUsSection() {
       style={{ backgroundImage: `url(${bg_orange})` }}
     >
       <div className="pt-24 px-10 md:px-24">
-        <ContactDetails />
-        <div>
+        <div className="">
+          <ContactDetails />
+        </div>
+        <div className="">
           <ContactForm />
         </div>
       </div>
