@@ -17,7 +17,7 @@ function WhatItProviders() {
         wHAT dOES FITEGG pROVIDES???
       </p>
       <div className="flex justify-center">
-        <div className="marque flex-shrink-0 flex  justify-between items-center h-[150px] border-2 font-slackey text-[1.5vw] text-[#755454]  py-8 w-[300%]">
+        <div className="marque flex-shrink-0 flex  justify-between items-center h-[80px] md:h-[100px] lg:h-[150px] border-2 font-slackey text-[1.5vw] text-[#755454]  py-2 md:py-4 lg:py-8 w-[300%]">
           <p className="border-l-2 h-full flex items-center pl-6 ">HIGH PROTIEN</p>
           <p className="border-l-2 h-full  flex items-center pl-6">
             SOURCE OF OMEGA -3S

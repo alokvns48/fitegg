@@ -1,15 +1,14 @@
-import aboutUsImg from "../assets/aboutUsImg.png";
 import aboutUsVideo from "../assets/aboutus_video.mp4";
 
 function AboutUs() {
   return (
-    <div className="flex ">
-      <div className="w-1/2 mr-10">
-        {/* left */}
-        <h2 className="font-sans font-extrabold text-[3vw] tracking-wide text-[#DA3A3B] mb-12">
+    <div className="flex flex-col md:flex-row px-4 md:px-0">
+      <div className="w-full md:w-1/2 mr-10">
+        <h2 className="font-sans font-extrabold text-[4vw] md:text-[3vw] tracking-wide text-[#DA3A3B] mb-12 text-center md:text-left">
           ABOUT US
         </h2>
-        <p className="font-ubuntu text-sm lg:text-base xl:text-xl 2xl:text-2xl">
+        {/* left */}
+        <p className="font-ubuntu text-[14px] lg:text-base xl:text-xl 2xl:text-2xl">
           Welcome to FIT EGG, your trusted source for high-quality eggs. With
           multiple locations, our mission is to deliver freshness and excellence
           in every egg we sell. At FIT EGG, we take pride in sourcing premium
