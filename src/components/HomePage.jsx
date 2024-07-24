@@ -6,20 +6,17 @@ import LearnMore from "./LearnMore";
 
 function HomePage() {
   return (
-    <section className="w-full bg-[#fff8e3] px-24 min-h-[100vh]">
+    <section className="w-full bg-[#fff8e3] px-24 HomePageSection">
       <Navbar />
       <div className="HomePageContainerDiv flex justify-center xl:gap-[80px]">
-        <div className="flex flex-col content-center overflow-hidden">
-          {/* left section */}
-          <EggWithHeading />
-        </div>
-        <div className="">
+        {/* left section */}
+        <EggWithHeading />
+        <div className="homePageRightSectionContainer">
           {/* Right section */}
-          <HealthyEating/>
-          <div className="flex justify-between 2xl:justify-normal">
+          <HealthyEating />
+          <div className="flex justify-between 2xl:justify-normal learnMoreandNutrientsContainer">
             {/* top */}
             <LearnMore />
-
             <Nutrients />
           </div>
         </div>
