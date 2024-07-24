@@ -11,10 +11,10 @@ function BenefitsSection() {
       style={{ backgroundImage: `url(${bg_orange})` }}
     >
       <div className="pt-24">
-        <div className="flex flex-col justify-center items-center w-full min-h-screen bg-[#F6F6F6] rounded-t-[150vh] pt-16 pb-24">
+        <div className="benifitsSectionDiv flex flex-col justify-center items-center w-full min-h-screen bg-[#38b000]  pt-16 pb-24">
 
           <div className="relative flex items-center justify-center">
-            <h2 className="BENEFITS_heading text-[9vw] font-sans font-[900] text-center text-[#F5CB1D]">
+            <h2 className="BENEFITS_heading text-[9vw] font-sans font-[900] text-center text-[#ffd500]">
               BENEFITS
             </h2>
             <h3 className="absolute text-[3vw] opacity-50">FIT EGG</h3>
@@ -45,7 +45,7 @@ function BenefitsSection() {
             </div>
           </div>
 
-          <button className="px-16 py-4 text-white  rounded-3xl bg-[#F5CB1D] mt-24">
+          <button className="px-16 py-4 text-white  rounded-3xl bg-[#ffd500] mt-24">
             Read more
           </button>
         </div>

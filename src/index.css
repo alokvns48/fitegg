@@ -27,6 +27,22 @@
 }
 
 /*-------------BenifitsSection animations starts------------ */
+/* benifitsSectionDiv */
+.benifitsSectionDiv{
+  animation: benifitsSectionDivTransform linear forwards;
+  animation-timeline: view();
+  animation-range-start: 0px;
+  animation-range-end: 100vh;
+}
+@keyframes benifitsSectionDivTransform {
+  from{
+    border-radius: 50%;
+  }
+  to{
+    border-radius: 0 0 0 0;
+  }
+}
+
 /* BENEFITS_heading */
 .BENEFITS_heading {
   animation: BENEFITS_heading_transform ease;
