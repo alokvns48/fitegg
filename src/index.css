@@ -13,17 +13,15 @@
   transition: transform 0.3s ease;
 }
 
-
-
 /* -------------HomePage styling--------------- */
 @media only screen and (max-width: 1110px) {
-  .card{
+  .card {
     width: 16rem;
   }
-  .learnMoreContainer{
+  .learnMoreContainer {
     width: 11rem;
   }
-  .learnMoreContainer button{
+  .learnMoreContainer button {
     padding: 1rem 0rem;
     font-size: 1.2rem;
   }
@@ -43,192 +41,205 @@
   .healthyEatingText {
     font-size: 50vw;
   }
-  .healthyEatingTextAboveLine{
+  .healthyEatingTextAboveLine {
     font-size: 3vw;
   }
-  .card{
+  .card {
     width: 18rem;
   }
-  .learnMoreContainer{
+  .learnMoreContainer {
     width: 14rem;
   }
-  .learnMoreContainer p{
+  .learnMoreContainer p {
     flex: 1;
     text-align: center;
     font-size: 2rem;
-  } 
-  .HomePageSection{
-    padding:0 40px;
   }
-  .HomePageContainerDiv{
+  .HomePageSection {
+    padding: 0 40px;
+  }
+  .HomePageContainerDiv {
     flex-wrap: wrap;
   }
-  .fitEggText{
+  .fitEggText {
     font-size: 20vw;
   }
-  .eggImg{
+  .eggImg {
     width: 40vw;
   }
-  .authenticImg{
+  .authenticImg {
     width: 15vw;
   }
 }
 @media only screen and (max-width: 780px) {
-  .healthyEatingText{
+  .healthyEatingText {
     font-size: 8vw;
   }
-  .healthyEatingTextAboveLine{
+  .healthyEatingTextAboveLine {
     font-size: 3vw;
   }
-  .authenticImg{
+  .authenticImg {
     width: 18vw;
   }
-  .card{
+  .card {
     width: 18rem;
   }
 }
 @media only screen and (max-width: 700px) {
-  .homePageRightSectionContainer{
+  .homePageRightSectionContainer {
     width: 100%;
     padding: 0px;
   }
-  .authenticImg{
+  .authenticImg {
     width: 20vw;
   }
-  .learnMoreandNutrientsContainer{
+  .learnMoreandNutrientsContainer {
     display: flex;
   }
-  .card{
+  .card {
     width: 17rem;
   }
 }
 @media only screen and (max-width: 649.5px) {
-  .HomePageContainerDiv{
+  .HomePageContainerDiv {
     flex-direction: column;
     align-items: center;
   }
-  .fitEggText{
+  .fitEggText {
     font-size: 15vw;
     margin-top: 0rem;
     line-height: normal;
   }
-  .eggImg{
+  .eggImg {
     width: 40vw;
   }
-  .learnMoreandNutrientsContainer{
+  .learnMoreandNutrientsContainer {
     justify-content: center;
     margin-top: 2rem;
   }
-  .authenticImg{
-    width: 30vw;
+  .authenticImg {
+    width: 23vw;
   }
 }
 
+/* -------------AboutUs mediaQueries starts-------------*/
+@media only screen and (max-width: 640px) {
+  .AboutUsWrapperDiv {
+    padding-top: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+/*-------------AboutUs mediaQueries ends----------------*/
 
 /*-------------BenifitsSection animations starts------------ */
-/* benifitsSectionDiv */
-.benifitsSectionDiv{
-  animation: benifitsSectionDivTransform linear forwards;
-  animation-timeline: view();
-  animation-range-start: 0px;
-  animation-range-end: 100vh;
-}
-@keyframes benifitsSectionDivTransform {
-  from{
-    border-radius: 50%;
-  }
-  to{
-    border-radius: 0 0 0 0;
-  }
-}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    /* benifitsSectionDiv */
+    .benifitsSectionDiv {
+      animation: benifitsSectionDivTransform linear forwards;
+      animation-timeline: view();
+      animation-range-start: 0px;
+      animation-range-end: calc(100vh);
+    }
+    @keyframes benifitsSectionDivTransform {
+      from {
+        border-radius: 50%;
+      }
+      to {
+        border-radius: 0 0 0 0;
+      }
+    }
 
-/* BENEFITS_heading */
-.BENEFITS_heading {
-  animation: BENEFITS_heading_transform ease;
-  animation-timeline: view(
-    70vh 0px
-  ); /* view(pageY offset(top se kitna neeche animation end hoga) , start point(bottom se kitne upar animation start hoga)) */
-}
-@keyframes BENEFITS_heading_transform {
-  from {
-    scale: 0.2;
-    opacity: 0.5;
-  }
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
+    /* BENEFITS_heading */
+    .BENEFITS_heading {
+      animation: BENEFITS_heading_transform ease;
+      animation-timeline: view(
+        70vh 0px
+      ); /* view(pageY offset(top se kitna neeche animation end hoga) , start point(bottom se kitne upar animation start hoga)) */
+    }
+    @keyframes BENEFITS_heading_transform {
+      from {
+        scale: 0.2;
+        opacity: 0.5;
+      }
+      to {
+        scale: 1;
+        opacity: 1;
+      }
+    }
 
-/* egg animation */
-.benifit_egg {
-  animation: translate-y ease-in;
-  animation-timeline: view();
-  animation-range-start: 0px;
-  animation-range-end: 70vh;
-}
+    /* egg animation */
+    .benifit_egg {
+      animation: translate-y ease-in;
+      animation-timeline: view();
+      animation-range-start: 0px;
+      animation-range-end: 70vh;
+    }
 
-@keyframes translate-y {
-  from {
-    transform: translateY(6rem);
-    opacity: 0.5;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/* benefits_left_img */
-.benefits_left_img {
-  animation: translate-x ease-in;
-  animation-timeline: view();
-  animation-range-start: 0px;
-  animation-range-end: 70vh;
-}
-@keyframes translate-x {
-  from {
-    transform: translateX(-100px);
-    opacity: 0.4;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-/* benefits_right_img*/
-.benefits_right_img {
-  animation: translate-right-img ease-in-out;
-  animation-timeline: view();
-  animation-range-start: 0px;
-  animation-range-end: 70vh;
-}
-@keyframes translate-right-img {
-  from {
-    transform: translateX(100px);
-    opacity: 0.4;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-/* ---------BenifitsSection animations ends--------- */
+    @keyframes translate-y {
+      from {
+        transform: translateY(6rem);
+        opacity: 0.5;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    /* benefits_left_img */
+    .benefits_left_img {
+      animation: translate-x ease-in;
+      animation-timeline: view();
+      animation-range-start: 0px;
+      animation-range-end: 70vh;
+    }
+    @keyframes translate-x {
+      from {
+        transform: translateX(-100px);
+        opacity: 0.4;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    /* benefits_right_img*/
+    .benefits_right_img {
+      animation: translate-right-img ease-in-out;
+      animation-timeline: view();
+      animation-range-start: 0px;
+      animation-range-end: 70vh;
+    }
+    @keyframes translate-right-img {
+      from {
+        transform: translateX(100px);
+        opacity: 0.4;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    /* ---------BenifitsSection animations ends--------- */
 
-/*--------HealthBenifits animation starts------------ */
-.yolk_img {
-  animation: translate-y-yolk-img ease-in;
-  animation-timeline: view();
-  animation-range-start: 0px;
-  animation-range-end: 70vh;
-}
+    /*--------HealthBenifits animation starts------------ */
+    .yolk_img {
+      animation: translate-y-yolk-img ease-in;
+      animation-timeline: view();
+      animation-range-start: 0px;
+      animation-range-end: 70vh;
+    }
 
-@keyframes translate-y-yolk-img {
-  from {
-    transform: translateY(10rem);
-    opacity: 0.5;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+    @keyframes translate-y-yolk-img {
+      from {
+        transform: translateY(10rem);
+        opacity: 0.5;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
   }
 }

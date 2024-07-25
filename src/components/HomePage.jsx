@@ -12,7 +12,7 @@ function HomePage() {
   });
 
   return (
-    <section className="w-full bg-[#fff8e3] px-24 HomePageSection">
+    <section className="w-full bg-[#FFF6F6] px-24 HomePageSection min-h-[100vh]">
       <Navbar />
       <div className="HomePageContainerDiv flex justify-center xl:gap-[80px]">
         {/* left section */}
