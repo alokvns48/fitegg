@@ -3,7 +3,7 @@ import yolk from "../assets/yolk.png";
 
 function HealthBenifits() {
   return (
-    <div className="flex w-full   items-center justify-between px-[6vw]   ">
+    <div className="flex w-full items-center justify-between px-[6vw]">
       <div className="w-1/2">
         {/* left */}
         <h2 className="font-sans font-extrabold text-[3vw] tracking-wide text-[#FFD729] mb-12">
