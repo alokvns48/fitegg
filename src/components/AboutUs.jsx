@@ -8,7 +8,7 @@ function AboutUs() {
       </h2>
       <div className="flex lg:flex-row flex-col sm:gap-7 lg:gap-0 w-full justify-between items-center text-[#042F1A] ">
         {/* left */}
-        <p className="font-ubuntu my-3 sm:my-0 text-[14px] lg:text-[1rem] 2xl:text-2xl lg:w-[48%] w-full">
+        <p className="font-ubuntu my-3 sm:my-0 text-[14px] lg:text-[1.15rem] 2xl:text-2xl lg:w-[48%] w-full">
           Welcome to FIT EGG, your trusted source for high-quality eggs. With
           multiple locations, our mission is to deliver freshness and excellence
           in every egg we sell. At FIT EGG, we take pride in sourcing premium

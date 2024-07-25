@@ -1,7 +1,7 @@
 
 function HealthyEating() {
   return (
-    <div className="mx-auto mt-[3.5rem] healthyEatingContainer">
+    <div className="mx-auto mt-[3.5rem] healthyEatingContainer px-4 sm:px-0">
       <p className="text-2xl leading-6 -tracking-wide text-[#482006] font-lora healthyEatingTextAboveLine">
         One FITEGG containing every promise of
       </p>
