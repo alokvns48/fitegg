@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.container {
+  perspective: 1000px;
+}
+.card {
+  transform-style: preserve-3d;
+}
+.sneaker {
+  transform: translateZ(0px);
+  transition: transform 0.3s ease;
+}
+
+
+
 /* -------------HomePage styling--------------- */
 @media only screen and (max-width: 1110px) {
   .card{
@@ -13,6 +26,17 @@
   .learnMoreContainer button{
     padding: 1rem 0rem;
     font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 1105px) {
+  .HomePageContainerDiv {
+    gap: 0;
+  }
+  .fitEggText {
+    margin-top: 3.5rem;
+  }
+  .healthyEatingContainer {
+    margin-top: 4rem;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -34,7 +58,7 @@
     font-size: 2rem;
   } 
   .HomePageSection{
-    padding: 40px;
+    padding:0 40px;
   }
   .HomePageContainerDiv{
     flex-wrap: wrap;
@@ -51,7 +75,7 @@
 }
 @media only screen and (max-width: 780px) {
   .healthyEatingText{
-    font-size: 5vw;
+    font-size: 8vw;
   }
   .healthyEatingTextAboveLine{
     font-size: 3vw;
@@ -59,11 +83,14 @@
   .authenticImg{
     width: 18vw;
   }
+  .card{
+    width: 18rem;
+  }
 }
 @media only screen and (max-width: 700px) {
   .homePageRightSectionContainer{
     width: 100%;
-    padding: 0 50px;
+    padding: 0px;
   }
   .authenticImg{
     width: 20vw;
@@ -71,32 +98,32 @@
   .learnMoreandNutrientsContainer{
     display: flex;
   }
-}
-
-
-.container {
-  perspective: 1000px;
-}
-.card {
-  transform-style: preserve-3d;
-}
-.sneaker {
-  transform: translateZ(0px);
-  transition: transform 0.3s ease;
-}
-
-/* HomePage MediaQueries */
-@media only screen and (max-width: 1105px) {
-  .HomePageContainerDiv {
-    gap: 0;
-  }
-  .fitEggText {
-    margin-top: 3.5rem;
-  }
-  .healthyEatingContainer {
-    margin-top: 4rem;
+  .card{
+    width: 17rem;
   }
 }
+@media only screen and (max-width: 649.5px) {
+  .HomePageContainerDiv{
+    flex-direction: column;
+    align-items: center;
+  }
+  .fitEggText{
+    font-size: 15vw;
+    margin-top: 0rem;
+    line-height: normal;
+  }
+  .eggImg{
+    width: 40vw;
+  }
+  .learnMoreandNutrientsContainer{
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .authenticImg{
+    width: 30vw;
+  }
+}
+
 
 /*-------------BenifitsSection animations starts------------ */
 /* benifitsSectionDiv */
