@@ -13,7 +13,7 @@ function WhatItProviders() {
   }, []);
   return (
     <div className="overflow-hidden marqueWrapperDiv sm:pt-8">
-      <p className="text-[6vw] sm:text-[4.5vw] font-bigshoulders font-bold tracking-wide my-[3vw] text-center text-[#3E2F08]">
+      <p className="text-[6vw] sm:text-[4.5vw] font-bigshoulders font-bold tracking-wide  text-center text-[#3E2F08]">
         wHAT dOES FITEGG pROVIDES???
       </p>
       <div className="flex justify-center">
