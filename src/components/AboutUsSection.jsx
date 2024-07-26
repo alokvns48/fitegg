@@ -8,7 +8,7 @@ function AboutUsSection() {
       <div className="min-h-screen">
         <AboutUs />
       </div>
-      <div className="min-h-screen flex flex-col justify-center">
+      <div className="min-h-screen flex flex-col justify-center pb-6">
         <WhatItProviders />
         <HealthBenifits />
       </div>
