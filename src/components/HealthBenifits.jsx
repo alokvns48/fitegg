@@ -30,7 +30,7 @@ function HealthBenifits() {
           <img
             src={yolk}
             alt=""
-            className=" object-cover w-[16vw] sm:w-[14vw] xl:w-[12vw]  -translate-y-14 xl:-translate-y-20 2xl:-translate-y-32 -translate-x-8 sm:-translate-x-16 xl:-translate-x-20"
+            className=" object-cover w-[16vw] sm:w-[10vw] xl:w-[12vw]  -translate-y-14 xl:-translate-y-20 2xl:-translate-y-32 -translate-x-8 sm:-translate-x-16 xl:-translate-x-20"
           />
         </div>
       </div>
