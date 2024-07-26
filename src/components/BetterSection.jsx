@@ -7,7 +7,7 @@ function BetterSection() {
       style={{ backgroundImage: `url(${bg_orange})` }}
     >
       <div className="pt-24 px-8 sm:px-16 lg:px-24 bg-gradient-to-b from-[#F6F6F6]">
-        <h2 className="text-[1.8rem] sm:text-[2.5rem] lg:text-[4vw] 2xl:text-[5vw] text-center lg:text-left font-extrabold font-sans text-[#DA3A3B] ">
+        <h2 className="text-[8vw] sm:text-[2.5rem] lg:text-[4vw] 2xl:text-[5vw] text-center lg:text-left font-extrabold font-sans text-[#DA3A3B] ">
           HOW ARE WE BETTER?
         </h2>
         <div className="flex justify-center">
