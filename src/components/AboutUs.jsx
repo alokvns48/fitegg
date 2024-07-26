@@ -25,7 +25,7 @@ function AboutUs() {
           autoPlay
           loop
           muted
-          className="lg:w-[48%] sm:w-[55%] md:w-[50%] rounded-3xl "
+          className="lg:w-[48%]  md:w-[50%] rounded-3xl "
         />
       </div>
     </div>

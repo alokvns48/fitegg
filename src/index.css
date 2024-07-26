@@ -124,9 +124,21 @@
 
 /* -------------AboutUs mediaQueries starts-------------*/
 @media only screen and (max-width: 640px) {
+  .AboutUsWrapperDiv h2{
+    font-size:3rem;
+  }
   .AboutUsWrapperDiv {
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .AboutUsWrapperDiv p{
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+  .AboutUsWrapperDiv video{
+    height: 27vh;
   }
 }
 
@@ -135,6 +147,21 @@
 /*-------------BenifitsSection animations starts------------ */
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
+    /* benifitsSectionDiv */
+    .benifitsSectionWrapperDiv {
+      animation: benifitsSectionWrapperDivTransform linear forwards;
+      animation-timeline: view();
+      animation-range-start: 0px;
+      animation-range-end: calc(100vh);
+    }
+    @keyframes benifitsSectionWrapperDivTransform {
+      from {
+        padding-top: 6rem;
+      }
+      to {
+        padding-top: 0;
+      }
+    }
     /* benifitsSectionDiv */
     .benifitsSectionDiv {
       animation: benifitsSectionDivTransform linear forwards;
