@@ -6,7 +6,7 @@ import benefit_egg from "../assets/benefit-egg.png";
 function BenefitsSection() {
   return (
     <div className="benifitsSectionWrapperDiv bg-[#bde0fe]">
-      <div className="benifitsSectionDiv flex flex-col justify-center items-center w-full min-h-screen bg-[#38b000]  pt-16 pb-24">
+      <div className="benifitsSectionDiv flex flex-col justify-center items-center w-full bg-[#38b000]  pt-16 pb-24">
         <div className="relative flex items-center justify-center">
           <h2 className="BENEFITS_heading text-[9vw] font-sans font-[900] text-center text-[#ffd500]">
             BENEFITS
