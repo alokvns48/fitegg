@@ -191,7 +191,7 @@
     }
     @keyframes benifitsSectionDivTransform {
       from {
-        border-radius: 50%;
+        border-radius: 50% 50% 0 0;
       }
       to {
         border-radius: 0 0 0 0;
