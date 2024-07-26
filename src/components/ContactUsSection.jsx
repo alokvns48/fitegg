@@ -5,7 +5,7 @@ import ContactForm from "./ContactForm";
 function ContactUsSection() {
   return (
     <div
-      className="w-full min-h-screen bg-repeat"
+      className="w-full bg-repeat"
       style={{ backgroundImage: `url(${bg_orange})` }}
     >
       <div className="pt-24 px-10 md:px-24">
