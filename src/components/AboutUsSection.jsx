@@ -4,11 +4,11 @@ import WhatItProviders from "./WhatItProviders";
 
 function AboutUsSection() {
   return (
-    <div className="w-full bg-[#FF73B5]">
-      <div className="min-h-screen">
+    <div className="w-full">
+      <div className="min-h-screen bg-[#FF73B5] sticky top-0">
         <AboutUs />
       </div>
-      <div className="min-h-screen flex flex-col justify-center">
+      <div className="min-h-screen flex flex-col justify-center bg-red-400 sticky top-0">
         <WhatItProviders />
         <HealthBenifits />
       </div>
