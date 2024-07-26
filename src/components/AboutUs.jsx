@@ -25,7 +25,7 @@ function AboutUs() {
           autoPlay
           loop
           muted
-          className="lg:w-[48%]  md:w-[50%] rounded-3xl "
+          className="rounded-3xl aboutUsVideoElement"
         />
       </div>
     </div>

@@ -124,25 +124,45 @@
 
 /* -------------AboutUs mediaQueries starts-------------*/
 @media only screen and (max-width: 640px) {
-  .AboutUsWrapperDiv h2{
-    font-size:3rem;
+  .AboutUsWrapperDiv h2 {
+    font-size: 3rem;
   }
   .AboutUsWrapperDiv {
-    padding-top: 2rem;
+    padding-top: 0rem;
     margin-bottom: 0;
     flex-direction: column;
     justify-content: center;
   }
-  .AboutUsWrapperDiv p{
+  .AboutUsWrapperDiv p {
     font-size: 0.9rem;
     font-weight: bolder;
-  }
-  .AboutUsWrapperDiv video{
-    height: 27vh;
   }
 }
 
 /*-------------AboutUs mediaQueries ends----------------*/
+
+/*------------ AboutUs animation starts---------------- */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .aboutUsVideoElement {
+      animation: videoReveal linear forwards;
+      animation-timeline: view();
+      animation-range-start: 0px;
+      animation-range-end: 45vh;
+    }
+    @keyframes videoReveal {
+      0% {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+      }
+      100% {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+      }
+    }
+  }
+}
+/*------------ AboutUs animation ends---------------- */
 
 /*-------------BenifitsSection animations starts------------ */
 @supports (animation-timeline: view()) {
