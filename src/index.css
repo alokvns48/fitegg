@@ -101,6 +101,9 @@
   }
 }
 @media only screen and (max-width: 649.5px) {
+  .HomePageSection {
+    padding: 0 6vw;
+  }
   .HomePageContainerDiv {
     flex-direction: column;
     align-items: center;
@@ -158,6 +161,23 @@
       100% {
         opacity: 1;
         clip-path: inset(0 0 0 0);
+      }
+    }
+
+    .AboutUsWrapperDiv h2 {
+      animation: aboutUsHeadingTranslate linear forwards;
+      animation-timeline: view();
+      animation-range-start: 0px;
+      animation-range-end: 300px;
+    }
+    @keyframes aboutUsHeadingTranslate {
+      0% {
+        opacity: 0;
+        transform: translateX(-150%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
       }
     }
   }
@@ -269,6 +289,54 @@
       }
     }
     /* ---------BenifitsSection animations ends--------- */
+
+    /* ---------how are we better animation starts -------*/
+    .hen_egg {
+      animation: translate-hen-egg linear forwards;
+      animation-timeline: view();
+      animation-range-start: 60vh;
+      animation-range-end: 150vh;
+    }
+    .hen_egg_mobile{
+      animation: translate-hen-egg linear forwards;
+      animation-timeline: view();
+      animation-range-start: 60vh;
+      animation-range-end: 150vh;
+    }
+
+    @keyframes translate-hen-egg {
+      from {
+        transform: translateY(0rem);
+      }
+      to {
+        transform: translateY(-6rem);
+      }
+    }
+
+    .feather_img {
+      animation: translate-feather-img linear forwards;
+      animation-timeline: view();
+      animation-range-start: 60vh;
+      animation-range-end: 150vh;
+    }
+    .feather_img_mobile{
+      animation: translate-feather-img linear forwards;
+      animation-timeline: view();
+      animation-range-start: 60vh;
+      animation-range-end: 150vh;
+    }
+
+    @keyframes translate-feather-img {
+      from {
+        transform: translateY(0rem);
+      }
+      to {
+        transform: translateY(6rem);
+      }
+    }
+
+
+    /* ---------how are we better animation ends -------*/
 
     /*--------HealthBenifits animation starts------------ */
     .yolk_img {

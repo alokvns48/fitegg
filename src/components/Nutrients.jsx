@@ -3,12 +3,13 @@ import authentic from "../assets/authentic.svg";
 
 function Nutrients() {
   const containerRef = useRef();
+  const cardRef = useRef();
+  const sneakerRef = useRef();
 
   useEffect(() => {
     const container = containerRef.current;
-
-    const card = container.querySelector(".card");
-    const sneaker = container.querySelector(".sneaker");
+    const card = cardRef.current;
+    const sneaker = sneakerRef.current;
 
     const handleMouseMove = (e) => {
       const rect = container.getBoundingClientRect();
@@ -25,7 +26,7 @@ function Nutrients() {
     };
 
     const handleMouseLeave = () => {
-      card.style.transition = `all 0.5s ease`;
+      card.style.transition = `all 0.8s ease`;
       card.style.transform = `rotateY(0deg) rotateX(0deg)`;
       sneaker.style.transform = "translateZ(0px)";
     };
@@ -41,14 +42,23 @@ function Nutrients() {
     };
   }, []);
   return (
-    <div className="container p-[2rem] xl:p-[2rem] lg:pt-[2.5rem] w-fit" ref={containerRef}>
-      <div className="card relative min-w-[20vw] w-[18rem]  p-5  border border-yellow-900 cursor-pointer">
+    <div
+      className="container p-[2rem] xl:p-[2rem] lg:pt-[2.5rem] w-fit"
+      ref={containerRef}
+    >
+      <div
+        ref={cardRef}
+        className="card relative min-w-[20vw] w-[18rem]  p-5  border border-yellow-900 cursor-pointer"
+      >
         <img
           src={authentic}
           alt="authentic"
           className="w-[10vw] absolute -top-[16%] right-[6%] authenticImg"
         />
-        <div className="sneaker flex flex-col justify-center whitespace-nowrap border-solid overflow-hidden">
+        <div
+          ref={sneakerRef}
+          className="sneaker flex flex-col justify-center whitespace-nowrap border-solid overflow-hidden"
+        >
           <h2 className="text-lg font-medium leading-8 text-[#B48C81]">
             CALORIES
           </h2>

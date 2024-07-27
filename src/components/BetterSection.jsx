@@ -1,5 +1,7 @@
 import bg_orange from "../assets/bg_orange.gif";
 import hen_egg from "../assets/hen-egg.png";
+import feather_image from "../assets/Feather-Images-for-Motion.png"
+
 function BetterSection() {
   return (
     <div
@@ -10,7 +12,7 @@ function BetterSection() {
         <h2 className="text-[8vw] sm:text-[2.5rem] lg:text-[4vw] 2xl:text-[5vw] text-center lg:text-left font-extrabold font-sans text-[#DA3A3B] ">
           HOW ARE WE BETTER?
         </h2>
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center">
           <div className="flex flex-col sm:flex-row justify-center lg:justify-between items-start lg:items-center pt-8 md:pt-14 lg:pt-20 space-y-4 sm:space-y-0">
             <div className="flex flex-col items-start lg:justify-between lg:items-center  lg:w-auto">
               <h2 className="font-sans font-extrabold text-[#C39132] text-[3vw] sm:text-[2.5vw]  lg:text-center ">
@@ -26,8 +28,9 @@ function BetterSection() {
                 <li>High satisfaction rate among our loyal customers.</li>
               </ol>
             </div>
-            <div className="hidden lg:block">
-              <img src={hen_egg} alt="" className="w-[32vw]" />
+            <div className="hidden lg:block relative">
+              <img src={hen_egg} alt="" className="w-[32vw] hen_egg"  />
+              <img src={feather_image} alt="" className="absolute inset-0 feather_img" />
             </div>
             <div className="flex flex-col justify-between items-start lg:items-center sm:pl-8 w-50% lg:w-auto">
               <h2 className="font-sans font-extrabold text-[#585858] text-[3vw] sm:text-[2.5vw] text-center">
@@ -42,8 +45,9 @@ function BetterSection() {
               </ol>
             </div>
           </div>
-          <div className="flex items-center justify-center sm:hidden">
-            <img src={hen_egg} alt="" className=" w-[130px]" />
+          <div className="flex items-center justify-center sm:hidden relative h-fit">
+            <img src={hen_egg} alt="" className=" w-[130px] hen_egg_mobile" />
+            <img src={feather_image} alt="" className="absolute inset-0 feather_egg_mobile" />
           </div>
         </div>
       </div>

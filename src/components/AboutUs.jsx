@@ -3,7 +3,8 @@ import aboutUsVideo from "../assets/aboutus_video.mp4";
 function AboutUs() {
   return (
     <div className="AboutUsWrapperDiv flex flex-col px-[6vw] xl:px-24 lg:pt-28 pt-10 min-h-[100vh]">
-      <h2 className="font-sans font-extrabold text-[2rem] sm:text-[2.5rem] lg:text-[3vw] 2xl:text-[5vw] tracking-wide sm:mb-12 md:mb-8 text-center md:text-left">
+      <h2 className="font-sans font-extrabold text-[2rem] sm:text-[2.5rem] lg:text-[3vw] 2xl:text-[5vw] tracking-wide sm:mb-12 md:mb-8 text-center md:text-left bg-white w-fit pr-7 pl-3"
+      style={{clipPath: "polygon(0 0, 100% 0, 90% 100%, 0% 100%)"}}>
         ABOUT US
       </h2>
       <div className="flex lg:flex-row flex-col sm:gap-7 lg:gap-0 w-full justify-between items-center text-[#042F1A] ">
