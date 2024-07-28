@@ -12,7 +12,7 @@ function HomePage() {
   });
 
   return (
-    <section className="w-full bg-[#FFF6F6] px-24 HomePageSection">
+    <section id="home" className="w-full bg-[#FFF6F6] px-24 HomePageSection">
       <Navbar />
       <div className="HomePageContainerDiv flex justify-center xl:gap-[80px]">
         {/* left section */}
@@ -20,8 +20,8 @@ function HomePage() {
         {isMaxScreenWidth650px ? (
           <div className=" flex flex-col items-center w-[50vw] gap-3">
             <p className="font-acme text-center">
-              “Ek kadam sehat ki or,<br /> Because healthly life is our
-              responsibility”
+              “Ek kadam sehat ki or,
+              <br /> Because healthly life is our responsibility”
             </p>
             <Button marginTop={"0rem"} width={"w-[40vw]"} />
           </div>

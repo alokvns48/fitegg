@@ -5,10 +5,10 @@ import WhatItProviders from "./WhatItProviders";
 function AboutUsSection() {
   return (
     <div className="w-full">
-      <div className=" bg-[#FF73B5] sticky top-0">
+      <div id="about" className=" bg-[#FF73B5] sticky top-0">
         <AboutUs />
       </div>
-      <div className="min-h-screen flex flex-col justify-center bg-red-400 sticky top-0">
+      <div id="benefit1" className="min-h-screen flex flex-col justify-center bg-red-400 sticky top-0">
         <WhatItProviders />
         <HealthBenifits />
       </div>

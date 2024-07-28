@@ -5,6 +5,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 function ContactDetails() {
   return (
@@ -19,28 +20,34 @@ function ContactDetails() {
         <div className="border-2 border-[#713e1196] h-[200px] w-[350px] rounded-2xl flex items-center pl-12">
           <ul className="flex flex-col font-semibold gap-4">
             <li className="flex gap-4">
-              <FontAwesomeIcon
-                size="xl"
-                icon={faPhone}
-                style={{ color: "#713e11" }}
-              />{" "}
-              <span>+91 9876543210</span>
+              <Link to="tel:+91 9876543210">
+                <FontAwesomeIcon
+                  size="xl"
+                  icon={faPhone}
+                  style={{ color: "#713e11" }}
+                />{" "}
+                <span>+91 9876543210</span>
+              </Link>
             </li>
             <li className="flex gap-4">
-              <FontAwesomeIcon
-                size="xl"
-                icon={faEnvelope}
-                style={{ color: "#713e11" }}
-              />{" "}
-              <span>info@fitegg.in</span>
+              <Link to="mailto:info@fitegg.in">
+                <FontAwesomeIcon
+                  size="xl"
+                  icon={faEnvelope}
+                  style={{ color: "#713e11" }}
+                />{" "}
+                <span>info@fitegg.in</span>
+              </Link>
             </li>
             <li className="flex gap-4">
-              <FontAwesomeIcon
-                size="xl"
-                icon={faInstagram}
-                style={{ color: "#713e11" }}
-              />
-              <span>fitegg_007</span>
+              <Link to="https://instagram.com/" target="_blank">
+                <FontAwesomeIcon
+                  size="xl"
+                  icon={faInstagram}
+                  style={{ color: "#713e11" }}
+                />
+                <span>fitegg_007</span>
+              </Link>
             </li>
           </ul>
         </div>

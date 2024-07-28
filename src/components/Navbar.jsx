@@ -2,27 +2,29 @@ import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import img from "../assets/navlogo.png";
 import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const HamburgerButton = ({ isNavOpen, onClick }) => (
   <button
-    className="top-4 right-4 z-50 flex flex-col justify-center items-center w-10 h-10 bg-transparent border-none cursor-pointer focus:outline-none"
+    className="fixed top-4 right-4 z-50 flex flex-col justify-center items-center w-10 h-10 bg-transparent border-none cursor-pointer focus:outline-none "
     onClick={onClick}
     aria-label="Toggle navigation"
     aria-controls="nav-menu"
   >
-    <div className="space-y-2">
+    <div className="bg-[#5d3327] space-y-2 p-2 rounded-lg">
       <span
-        className={`block w-8 h-0.5 bg-[#5d3327] transition-transform duration-300 ease-in-out ${
+        className={`block w-6 h-0.5 bg-[#fffefe] transition-transform duration-300 ease-in-out ${
           isNavOpen ? "rotate-45 translate-y-2" : ""
         }`}
       ></span>
       <span
-        className={`block w-8 h-0.5 bg-[#5d3327] transition-opacity duration-300 ease-in-out ${
+        className={`block w-6 h-0.5 bg-[#fffefe] transition-opacity duration-300 ease-in-out ${
           isNavOpen ? "opacity-0" : ""
         }`}
       ></span>
       <span
-        className={`block w-8 h-0.5 bg-[#5d3327] transition-transform duration-300 ease-in-out ${
+        className={`block w-6 h-0.5 bg-[#fffefe] transition-transform duration-300 ease-in-out ${
           isNavOpen ? "-rotate-45 -translate-y-2" : ""
         }`}
       ></span>
@@ -45,11 +47,22 @@ const NavMenu = ({ isNavOpen, onClose }) => (
       -
     </button>
     <img src={img} className="w-28 h-28 mb-12 mt-12" alt="Logo" />
-    <ul className="h-full flex flex-col items-center justify-start gap-10 pt-10 text-[#5d3327] text-6xl text-center mb-8 font-acme">
-      <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">Home</li>
-      <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">About</li>
-      <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">Benefits</li>
-      <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">Contact</li>
+    <ul className="h-full flex flex-col items-center justify-start gap-10 pt-10 text-[#5d3327] text-[10vw] text-center mb-8 font-acme">
+      <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">
+        {" "}
+        <HashLink to="#home" onClick={onClose}>Home</HashLink>
+      </li>
+      <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">
+        <HashLink  to="#about" onClick={onClose}>
+          About
+        </HashLink>
+      </li>
+      <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[rgb(160,78,60)] hover:scale-105 animate-fadeInUp">
+      <HashLink  to="#benefit" onClick={onClose}>Benefits</HashLink>
+      </li>
+      <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">
+      <HashLink  to="#contact" onClick={onClose}>Contact</HashLink>
+      </li>
     </ul>
     <div className="flex items-center justify-between gap-0 px-10 w-full text-[#5d3327] text-3xl mt-auto mb-6">
       <FaInstagram className="cursor-pointer" onClick={onClose} />
@@ -91,7 +104,7 @@ function Navbar() {
         <img
           src={img}
           className={`w-16 sm:w-24 ${
-            isMaxScreenWidth650px ? "scale-110 translate-y-2.5" : "h-24"
+            isMaxScreenWidth650px ? "scale-110 translate-y-2.5 -translate-x-6" : "h-24"
           }`}
           alt="Logo"
         />
@@ -101,10 +114,26 @@ function Navbar() {
       </div>
       <div className="w-full md:h-20 flex items-center justify-center">
         <ul className="hidden md:flex gap-8 sm:gap-16 lg:gap-32 mx-auto text-[#5d3327] text-base sm:text-lg">
-          <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:font-semibold hover:scale-105 animate-fadeInUp">Home</li>
-          <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:font-semibold hover:scale-105 animate-fadeInUp">About</li>
-          <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:font-semibold hover:scale-105 animate-fadeInUp">Benefits</li>
-          <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:font-semibold hover:scale-105 animate-fadeInUp">Contact</li>
+          <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:font-semibold hover:scale-105 animate-fadeInUp">
+            <HashLink smooth to="#home">
+              Home
+            </HashLink>
+          </li>
+          <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:font-semibold hover:scale-105 animate-fadeInUp">
+            <HashLink smooth to="#about">
+              About
+            </HashLink>
+          </li>
+          <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:font-semibold hover:scale-105 animate-fadeInUp">
+            <HashLink smooth to="#benefit">
+              Benefits
+            </HashLink>
+          </li>
+          <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:font-semibold hover:scale-105 animate-fadeInUp">
+            <HashLink smooth to="#contact">
+              Contact
+            </HashLink>
+          </li>
         </ul>
       </div>
       {isMaxScreenWidth650px && (
