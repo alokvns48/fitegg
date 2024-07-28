@@ -11,7 +11,7 @@ function ContactDetails() {
   return (
     <div className="flex flex-wrap justify-center items-center gap-[8vw]">
       <div>
-        <h2 className="text-lg md:text-[3vw] font-bold text-[#713e11] text-center py-4 ">
+        <h2 className="text-3xl md:text-[3vw] font-bold text-[#713e11] text-center py-4 ">
           Contact Us
         </h2>
         <hr className="xl:w-[50%] border-b-2 xl:border-b-[3px] border-[#713e11] rounded-xl xl:mt-2" />
