@@ -128,7 +128,7 @@
 /* -------------AboutUs mediaQueries starts-------------*/
 @media only screen and (max-width: 640px) {
   .AboutUsWrapperDiv h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .AboutUsWrapperDiv {
     padding-top: 0rem;

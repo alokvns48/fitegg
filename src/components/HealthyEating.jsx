@@ -6,7 +6,7 @@ function HealthyEating() {
         One FITEGG containing every promise of
       </p>
       <div className="font-bigshoulders ">
-        <h2 className="healthyEatingText md:text-[5vw] lg:text-[5vw] 2xl:text-[4vw] font-bold text-[#FAB303] font-lora">HEALTHY EATING</h2>
+        <h2 className="healthyEatingText md:text-[5vw] lg:text-[4.8vw] 2xl:text-[4vw] font-bold text-[#FAB303] font-lora">HEALTHY EATING</h2>
       </div>
     </div>
   );
