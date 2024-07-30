@@ -33,7 +33,7 @@ function HealthBenifits() {
         <h2 className="w-full font-sans font-extrabold text-[8vw] sm:text-[4.5vw] md:text-[5.5vw] lg:text-[4vw] 2xl:text-[4vw] text-center sm:text-left tracking-wide text-[rgb(255,208,0)] mb-4 sm:mb-6 lg:mb-8">
           HEALTH BENEFITS
         </h2>
-        <ol className="text-[3vw] sm:text-[2.5vw] lg:text-[1.6vw] xl:text-[1.6vw] font-ubuntu font-medium list-decimal list-inside flex flex-col gap-y-[1.5vw] px-6 sm:px-0">
+        <ol className="text-[3.5vw] sm:text-[2.5vw] lg:text-[1.6vw] xl:text-[1.6vw] font-ubuntu font-medium list-decimal list-inside flex flex-col gap-y-[1.5vw] px-6 sm:px-0">
           <li>High-quality protein source for muscle growth.</li>
           <li>Rich in essential vitamins and minerals.</li>
           <li>Contains antioxidants for eye health.</li>

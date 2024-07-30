@@ -88,7 +88,7 @@ function BetterSection() {
               <h2 className="font-sans font-extrabold text-[#ffef10] text-[4vw] sm:text-[2.5vw]  lg:text-center ">
                 FIT EGG
               </h2>
-              <ol className="flex flex-col justify-between list-decimal font-ubuntu list-inside  text-[2.9vw] sm:text-[1.8vw] md:text-[1.6vw] lg:text-[1.4vw] gap-1 sm:gap-2 mt-2 sm:mt-6 w-full">
+              <ol className="flex flex-col justify-between list-decimal font-ubuntu list-inside  text-[3.5vw] sm:text-[1.8vw] md:text-[1.6vw] lg:text-[1.4vw] gap-1 sm:gap-2 mt-2 sm:mt-6 w-full">
                 <li>Consistent quality from rigorous control measures.</li>
                 <li>Higher omega-3 and enriched vitamins for health.</li>
                 <li>Eco-friendly packaging that ensures durability.</li>
@@ -111,7 +111,7 @@ function BetterSection() {
               <h2 className="font-sans font-extrabold text-[#585858] text-[4vw] sm:text-[2.5vw] text-center">
                 REGULAR
               </h2>
-              <ol className="flex flex-col justify-between items-start list-decimal list-inside font-ubuntu  text-[2.9vw] sm:text-[1.8vw] md:text-[1.6vw] lg:text-[1.4vw] gap-1 sm:gap-2 mt-2 sm:mt-6">
+              <ol className="flex flex-col justify-between items-start list-decimal list-inside font-ubuntu  text-[3.5vw] sm:text-[1.8vw] md:text-[1.6vw] lg:text-[1.4vw] gap-1 sm:gap-2 mt-2 sm:mt-6">
                 <li>Quality varies from source to source.</li>
                 <li>Provides standard nutritional benefits.</li>
                 <li>Often uses basic and less protective packaging.</li>
