@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+/* ------------HomePage Nutrients css---------- */
 .container {
   perspective: 1000px;
 }
@@ -141,220 +153,4 @@
     font-weight: bolder;
   }
 }
-
 /*-------------AboutUs mediaQueries ends----------------*/
-
-/*------------ AboutUs animation starts---------------- */
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .aboutUsVideoElement {
-      animation: videoReveal linear forwards;
-      animation-timeline: view();
-      animation-range-start: 0px;
-      animation-range-end: 45vh;
-    }
-    @keyframes videoReveal {
-      0% {
-        opacity: 0;
-        clip-path: inset(45% 20% 45% 20%);
-      }
-      100% {
-        opacity: 1;
-        clip-path: inset(0 0 0 0);
-      }
-    }
-
-    .AboutUsWrapperDiv h2 {
-      animation: aboutUsHeadingTranslate linear forwards;
-      animation-timeline: view();
-      animation-range-start: 0px;
-      animation-range-end: 300px;
-    }
-    @keyframes aboutUsHeadingTranslate {
-      0% {
-        opacity: 0;
-        transform: translateX(-150%);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0%);
-      }
-    }
-  }
-}
-/*------------ AboutUs animation ends---------------- */
-
-/*-------------BenifitsSection animations starts------------ */
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    /* benifitsSectionDiv */
-    .benifitsSectionWrapperDiv {
-      animation: benifitsSectionWrapperDivTransform linear forwards;
-      animation-timeline: view();
-      animation-range-start: 0px;
-      animation-range-end: calc(100vh);
-    }
-    @keyframes benifitsSectionWrapperDivTransform {
-      from {
-        padding-top: 6rem;
-      }
-      to {
-        padding-top: 0;
-      }
-    }
-    /* benifitsSectionDiv */
-    .benifitsSectionDiv {
-      animation: benifitsSectionDivTransform linear forwards;
-      animation-timeline: view();
-      animation-range-start: 0px;
-      animation-range-end: calc(100vh);
-    }
-    @keyframes benifitsSectionDivTransform {
-      from {
-        border-radius: 30% 30% 0 0;
-      }
-      to {
-        border-radius: 0 0 0 0;
-      }
-    }
-
-    /* BENEFITS_heading */
-    .BENEFITS_heading {
-      animation: BENEFITS_heading_transform ease;
-      animation-timeline: view(
-        70vh 0px
-      ); /* view(pageY offset(top se kitna neeche animation end hoga) , start point(bottom se kitne upar animation start hoga)) */
-    }
-    @keyframes BENEFITS_heading_transform {
-      from {
-        scale: 0.2;
-        opacity: 0.5;
-      }
-      to {
-        scale: 1;
-        opacity: 1;
-      }
-    }
-
-    /* egg animation */
-    .benifit_egg {
-      animation: translate-y ease-in;
-      animation-timeline: view();
-      animation-range-start: 0px;
-      animation-range-end: 70vh;
-    }
-
-    @keyframes translate-y {
-      from {
-        transform: translateY(6rem);
-        opacity: 0.5;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-    /* benefits_left_img */
-    .benefits_left_img {
-      animation: translate-x ease-in;
-      animation-timeline: view();
-      animation-range-start: 0px;
-      animation-range-end: 70vh;
-    }
-    @keyframes translate-x {
-      from {
-        transform: translateX(-100px);
-        opacity: 0.4;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    /* benefits_right_img*/
-    .benefits_right_img {
-      animation: translate-right-img ease-in-out;
-      animation-timeline: view();
-      animation-range-start: 0px;
-      animation-range-end: 70vh;
-    }
-    @keyframes translate-right-img {
-      from {
-        transform: translateX(100px);
-        opacity: 0.4;
-      }
-      to {
-        transform: translateX(0);
-        opacity: 1;
-      }
-    }
-    /* ---------BenifitsSection animations ends--------- */
-
-    /* ---------how are we better animation starts -------*/
-    .hen_egg {
-      animation: translate-hen-egg linear forwards;
-      animation-timeline: view();
-      animation-range-start: 60vh;
-      animation-range-end: 150vh;
-    }
-    .hen_egg_mobile{
-      animation: translate-hen-egg linear forwards;
-      animation-timeline: view();
-      animation-range-start: 60vh;
-      animation-range-end: 150vh;
-    }
-
-    @keyframes translate-hen-egg {
-      from {
-        transform: translateY(0rem);
-      }
-      to {
-        transform: translateY(-6rem);
-      }
-    }
-
-    .feather_img {
-      animation: translate-feather-img linear forwards;
-      animation-timeline: view();
-      animation-range-start: 60vh;
-      animation-range-end: 150vh;
-    }
-    .feather_img_mobile{
-      animation: translate-feather-img linear forwards;
-      animation-timeline: view();
-      animation-range-start: 60vh;
-      animation-range-end: 150vh;
-    }
-
-    @keyframes translate-feather-img {
-      from {
-        transform: translateY(0rem);
-      }
-      to {
-        transform: translateY(6rem);
-      }
-    }
-
-
-    /* ---------how are we better animation ends -------*/
-
-    /*--------HealthBenifits animation starts------------ */
-    .yolk_img {
-      animation: translate-y-yolk-img ease-in;
-      animation-timeline: view();
-      animation-range-start: 0px;
-      animation-range-end: 70vh;
-    }
-
-    @keyframes translate-y-yolk-img {
-      from {
-        transform: translateY(10rem);
-        opacity: 0.5;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-  }
-}
