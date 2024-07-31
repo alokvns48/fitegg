@@ -127,7 +127,7 @@ function BenefitsSection() {
         <div className="relative flex items-center justify-center">
           <h2
             ref={BENEFITS_heading}
-            className="BENEFITS_heading text-[9vw] font-lora font-[900] text-center text-[#042F1A] scale-[0.2] opacity-[0.5]"
+            className="BENEFITS_heading text-[11vw] sm:text-[9vw] font-lora font-[900] text-center text-[#042F1A] scale-[0.2] opacity-[0.5]"
           >
             BENEFITS
           </h2>
@@ -165,7 +165,7 @@ function BenefitsSection() {
           </div>
         </div>
         <HashLink smooth to="#benefit1">
-          <button className="px-20 py-5 text-white text-[1.2rem] bg-[#042F1A] rounded-3xl mt-24 font-bigshoulders font-extrabold">
+          <button className="px-16 py-3 sm:px-20 sm:py-5 text-white text-[1.2rem] bg-[#042F1A] rounded-3xl mt-24 font-bigshoulders font-extrabold">
             READ MORE
           </button>
         </HashLink>
