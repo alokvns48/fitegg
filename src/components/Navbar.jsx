@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import img from "../assets/navlogo.png";
-import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 const HamburgerButton = ({ isNavOpen, onClick }) => (
   <button
@@ -50,24 +49,30 @@ const NavMenu = ({ isNavOpen, onClose }) => (
     <ul className="h-full flex flex-col items-center justify-start gap-10 pt-10 text-[#5d3327] text-[10vw] text-center mb-8 font-acme">
       <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">
         {" "}
-        <HashLink to="#home" onClick={onClose}>Home</HashLink>
+        <HashLink to="#home" onClick={onClose}>
+          Home
+        </HashLink>
       </li>
       <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">
-        <HashLink  to="#about" onClick={onClose}>
+        <HashLink to="#about" onClick={onClose}>
           About
         </HashLink>
       </li>
       <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[rgb(160,78,60)] hover:scale-105 animate-fadeInUp">
-      <HashLink  to="#benefit" onClick={onClose}>Benefits</HashLink>
+        <HashLink to="#benefit" onClick={onClose}>
+          Benefits
+        </HashLink>
       </li>
       <li className="cursor-pointer transition-all duration-500 ease-in-out transform hover:text-[#a04e3c] hover:scale-105 animate-fadeInUp">
-      <HashLink  to="#contact" onClick={onClose}>Contact</HashLink>
+        <HashLink to="#contact" onClick={onClose}>
+          Contact
+        </HashLink>
       </li>
     </ul>
     <div className="flex items-center justify-between gap-0 px-10 w-full text-[#5d3327] text-3xl mt-auto mb-6">
       <FaInstagram className="cursor-pointer" onClick={onClose} />
       <FaFacebook className="cursor-pointer" onClick={onClose} />
-      <FaLinkedin className="cursor-pointer" onClick={onClose} />
+      <FaWhatsapp className="cursor-pointer" onClick={onClose} />
     </div>
   </div>
 );
@@ -104,7 +109,9 @@ function Navbar() {
         <img
           src={img}
           className={`w-16 sm:w-24 ${
-            isMaxScreenWidth650px ? "scale-110 translate-y-2.5 -translate-x-6" : "h-24"
+            isMaxScreenWidth650px
+              ? "scale-110 translate-y-2.5 -translate-x-6"
+              : "h-24"
           }`}
           alt="Logo"
         />
