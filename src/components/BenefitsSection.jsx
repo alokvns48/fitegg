@@ -118,7 +118,7 @@ function BenefitsSection() {
     <div
       id="benefit"
       ref={benifitsSectionWrapperDiv}
-      className="benifitsSectionWrapperDiv bg-custom-gradient-7 pt-[6rem]"
+      className="benifitsSectionWrapperDiv bg-[#FFF6F6] pt-[6rem]"
     >
       <div
         ref={benifitsSectionDiv}

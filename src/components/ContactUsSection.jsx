@@ -6,7 +6,8 @@ function ContactUsSection() {
   return (
     <div
       id="contact"
-      className="w-full bg-custom-gradient-7 "
+      className="w-full bg-repeat  "
+      style={{ backgroundImage: `url(${bg_orange})` }}
       
     >
       <div className="pt-24 px-10 md:px-24">
