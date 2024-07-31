@@ -30,7 +30,7 @@ function HealthBenifits() {
     <div className="flex flex-col lg:flex-row w-full items-center sm:items-start justify-between px-[6vw] gap-6 sm:gap-0">
       <div className="w-full lg:w-1/2">
         {/* left */}
-        <h2 className="w-full font-sans font-extrabold text-[8vw] sm:text-[4.5vw] md:text-[5.5vw] lg:text-[4vw] 2xl:text-[4vw] text-center sm:text-left tracking-wide text-[rgb(255,208,0)] mb-4 sm:mb-6 lg:mb-8">
+        <h2 className="w-full font-sans font-extrabold text-[8.5vw] sm:text-[4.5vw] md:text-[5.5vw] lg:text-[4vw] 2xl:text-[4vw] text-center sm:text-left tracking-wide text-[rgb(255,208,0)] mb-4 sm:mb-6 lg:mb-8">
           HEALTH BENEFITS
         </h2>
         <ol className="text-[3.5vw] sm:text-[2.5vw] lg:text-[1.6vw] xl:text-[1.6vw] font-ubuntu font-medium list-decimal list-inside flex flex-col gap-y-[1.5vw] px-6 sm:px-0">
