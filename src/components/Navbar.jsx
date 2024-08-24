@@ -3,6 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import img from "../assets/navlogo.png";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const HamburgerButton = ({ isNavOpen, onClick }) => (
   <button
@@ -70,9 +71,15 @@ const NavMenu = ({ isNavOpen, onClose }) => (
       </li>
     </ul>
     <div className="flex items-center justify-between gap-0 px-10 w-full text-[#5d3327] text-3xl mt-auto mb-6">
-      <FaInstagram className="cursor-pointer" onClick={onClose} />
-      <FaFacebook className="cursor-pointer" onClick={onClose} />
-      <FaWhatsapp className="cursor-pointer" onClick={onClose} />
+      <Link to="https://instagram.com/fitegg__" target="_blank">
+        <FaInstagram className="cursor-pointer" onClick={onClose} />
+      </Link>
+      <Link to="https://www.facebook.com/profile.php?id=61563814757051">
+        <FaFacebook className="cursor-pointer" onClick={onClose} />
+      </Link>
+      <Link to="https://wa.me/919334617048?text=Hello?" target="_blank">
+        <FaWhatsapp className="cursor-pointer" onClick={onClose} />
+      </Link>
     </div>
   </div>
 );

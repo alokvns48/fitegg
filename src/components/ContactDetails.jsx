@@ -4,8 +4,9 @@ import {
   faPhone,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import fssai from "../assets/fssai-logo.png";
 
 function ContactDetails() {
   return (
@@ -23,10 +24,10 @@ function ContactDetails() {
               <Link to="tel:+91 9876543210">
                 <FontAwesomeIcon
                   size="xl"
-                  icon={faPhone}
+                  icon={faWhatsapp}
                   style={{ color: "#713e11" }}
                 />{" "}
-                <span className="ml-2">+91 9876543210</span>
+                <span className="ml-2">+91 9334617048</span>
               </Link>
             </li>
             <li className="flex gap-4">
@@ -36,28 +37,40 @@ function ContactDetails() {
                   icon={faEnvelope}
                   style={{ color: "#713e11" }}
                 />{" "}
-                <span className="ml-3">info@fitegg.in</span>
+                <span className="ml-3">fitegg4@gmail.com</span>
               </Link>
             </li>
             <li className="flex gap-4">
-              <Link to="https://instagram.com/" target="_blank">
+              <Link to="https://instagram.com/fitegg__" target="_blank">
                 <FontAwesomeIcon
                   size="xl"
                   icon={faInstagram}
                   style={{ color: "#713e11" }}
                 />
-                <span className="ml-4">fitegg_007</span>
+                <span className="ml-4">fitegg__</span>
               </Link>
+            </li>
+            <li className="flex gap-4 font-semibold">
+              <FontAwesomeIcon
+                size="xl"
+                icon={faLocationDot}
+                style={{ color: "#713e11" }}
+              />
+              <p>Lucknow, Prayagraj, Buxar</p>
             </li>
           </ul>
         </div>
-        <div className="border-2 border-[#713e1196] h-[180px] w-[320px] sm:h-[200px] sm:w-[350px] rounded-2xl flex items-center pl-12 gap-4">
-          <FontAwesomeIcon
-            size="xl"
-            icon={faLocationDot}
-            style={{ color: "#713e11" }}
-          />
-          <p>Lucknow, Prayagraj, Buxar</p>
+        <div className="border-2 border-[#713e1196] h-[180px] w-[320px] sm:h-[200px] sm:w-[350px] rounded-2xl flex items-center pl-12 gap-0">
+          <ul>
+            <li className="flex flex-col gap-4 items-center justify-center pt-4">
+              <img
+                src={fssai}
+                alt=""
+                className="w-28 items-center object-center"
+              />
+              <p className="text-lg">Lic.No: 30240206115684565</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

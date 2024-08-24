@@ -1,9 +1,9 @@
 import { useMediaQuery } from "react-responsive";
-import benefits_left from "../assets/benefits-left.png";
+import benefits_left from "../assets/benefits-left1.png";
 import benefits_right from "../assets/benefits-right.png";
 import circle from "../assets/circle.png";
 import benefit_egg from "../assets/benefit-egg.png";
-import benifits_mobile_left from "../assets/benefit-mobile-left.png";
+import benifits_mobile_left from "../assets/benefit-mobile-left1.png";
 import benifits_mobile_right from "../assets/benefit-mobile-right.png";
 import { HashLink } from "react-router-hash-link";
 import { useEffect, useRef } from "react";
