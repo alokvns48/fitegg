@@ -7,7 +7,7 @@ function LearnMore() {
         <div className="flex items-center justify-center">
           <p className="font-acme text-2xl ">
             “Ek kadam <br />
-            sehat ki or, <br />
+            sehat ki oor, <br />
             Because healthly
             <br /> life is our <br />
             responsibility”

@@ -68,7 +68,7 @@ function ContactDetails() {
                 alt=""
                 className="w-28 items-center object-center"
               />
-              <p className="text-lg">Lic.No: 30240206115684565</p>
+              <p className="text-lg">Lic.No: 10424040000045</p>
             </li>
           </ul>
         </div>
