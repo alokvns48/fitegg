@@ -9,6 +9,12 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [result, setResult] = useState("");
 
+  // States to manage label visibility
+  const [nameLabel, setNameLabel] = useState("Name");
+  const [mobileLabel, setMobileLabel] = useState("Mobile");
+  const [emailLabel, setEmailLabel] = useState("Email");
+  const [messageLabel, setMessageLabel] = useState("Message");
+
   const validateForm = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const mobileRegex = /^\d{10}$/;
@@ -58,6 +64,10 @@ const ContactForm = () => {
       setMobile("");
       setEmail("");
       setMessage("");
+      setNameLabel("Name");
+      setMobileLabel("Mobile");
+      setEmailLabel("Email");
+      setMessageLabel("Message");
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -75,10 +85,13 @@ const ContactForm = () => {
             <AnimatedInput
               className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
               type="text"
-              label="Name"
+              label={nameLabel}
               name="name"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => {
+                setName(e.target.value);
+                setNameLabel(e.target.value ? "" : "Name");
+              }}
               required
             />
           </div>
@@ -86,10 +99,13 @@ const ContactForm = () => {
             <AnimatedInput
               className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 leading-tight focus:outline-none focus:bg-white"
               type="text"
-              label="Mobile"
+              label={mobileLabel}
               name="mobile"
               value={mobile}
-              onChange={(e) => setMobile(e.target.value)}
+              onChange={(e) => {
+                setMobile(e.target.value);
+                setMobileLabel(e.target.value ? "" : "Mobile");
+              }}
               required
             />
           </div>
@@ -99,10 +115,13 @@ const ContactForm = () => {
             <AnimatedInput
               className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 mb-0 leading-tight focus:outline-none focus:bg-white"
               type="email"
-              label="Email"
+              label={emailLabel}
               name="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => {
+                setEmail(e.target.value);
+                setEmailLabel(e.target.value ? "" : "Email");
+              }}
               required
             />
           </div>
@@ -111,12 +130,15 @@ const ContactForm = () => {
           <div className="w-full px-3">
             <AnimatedTextArea
               className="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded-3xl py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-48 resize-none"
-              label="Message"
+              label={messageLabel}
               name="message"
               value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={(e) => {
+                setMessage(e.target.value);
+                setMessageLabel(e.target.value ? "" : "Message");
+              }}
               required
-            ></AnimatedTextArea>
+            />
           </div>
         </div>
         <div className="flex flex-wrap -mx-3 mb-6">
@@ -130,7 +152,7 @@ const ContactForm = () => {
           </div>
         </div>
       </form>
-      <p >{result}</p>
+      <p>{result}</p>
     </div>
   );
 };
