@@ -20,7 +20,7 @@ function HomePage() {
         {isMaxScreenWidth650px ? (
           <div className=" flex flex-col items-center w-[50vw] gap-3">
             <p className="font-acme text-center">
-              “Ek kadam sehat ki or,
+              “Ek kadam sehat ki oor,
               <br /> Because healthly life is our responsibility”
             </p>
             <Button marginTop={"0rem"} width={"w-[40vw]"} />

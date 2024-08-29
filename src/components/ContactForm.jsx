@@ -43,7 +43,7 @@ const ContactForm = () => {
     formData.append("mobile", mobile);
     formData.append("email", email);
     formData.append("message", message);
-    formData.append("access_key", "bed27550-7a82-4e83-b0a3-8b2a7c9c75e0");
+    formData.append("access_key", "7fc132da-13ef-4cc0-a10a-d87a3da08513");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
