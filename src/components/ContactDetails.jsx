@@ -21,7 +21,7 @@ function ContactDetails() {
         <div className="border-2 border-[#713e1196] h-[180px] w-[320px] sm:h-[200px] sm:w-[350px] rounded-2xl flex items-center pl-12">
           <ul className="flex flex-col font-semibold gap-4">
             <li className="flex gap-4">
-              <Link to="tel:+91 9876543210">
+              <Link to="tel:+91 9334617048">
                 <FontAwesomeIcon
                   size="xl"
                   icon={faWhatsapp}

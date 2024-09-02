@@ -5,7 +5,6 @@ function Nutrients() {
   const containerRef = useRef();
   const cardRef = useRef();
   const sneakerRef = useRef();
-
   useEffect(() => {
     const container = containerRef.current;
     const card = cardRef.current;
@@ -14,6 +13,7 @@ function Nutrients() {
     const handleMouseMove = (e) => {
       const rect = container.getBoundingClientRect();
       const centerX = rect.left + window.scrollX + rect.width / 2;
+      
       const centerY = rect.top + window.scrollY + rect.height / 2;
       let xAxis = (centerX - e.pageX) / 25;
       let yAxis = (centerY - e.pageY) / 25;
